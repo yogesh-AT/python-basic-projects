@@ -1,0 +1,31 @@
+import openpyxl
+
+wb = openpyxl.load_workbook('C:\\Users\\amrut\\OneDrive\\Documents\\family_data.py.xlsx')
+sheet = wb.active
+
+sheet['A1'] = 'Name'
+sheet['B1'] = 'Age'
+sheet['C1'] = 'Gender'
+sheet['D1'] = 'Blood group'
+
+sheet['A2'] = 'Thulasi'
+sheet['B2'] = '49'
+sheet['C2'] = 'male'
+sheet['D2'] = 'O+'
+
+sheet['A3'] = 'Neeraja'
+sheet['B3'] = '40'
+sheet['C3'] = 'female'
+sheet['D3'] = 'B+'
+
+sheet['A4'] = 'Yogesh'
+sheet['B4'] = '18'
+sheet['C4'] = 'male'
+sheet['D4'] = 'B+'
+
+sheet['A5'] = 'Haritha'
+sheet['B5'] = '22'
+sheet['C5'] = 'female'
+sheet['D5'] = 'O+'
+
+wb.save('C:\\Users\\amrut\\OneDrive\\Documents\\family_data.py.xlsx')

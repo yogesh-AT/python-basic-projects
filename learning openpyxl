@@ -1,0 +1,7 @@
+import openpyxl
+
+wb = openpyxl.load_workbook("C:\\Users\\amrut\\Downloads\\House Warming List (2).xlsx")
+sheet = wb.active
+
+for row in sheet.iter_rows(min_row=1, max_row=10, values_only=True):
+    print(row)
